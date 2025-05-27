@@ -1,0 +1,186 @@
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: #fffbe6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #f4a261;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+nav {
+  background: #2a9d8f;
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 8px 20px;
+  border-radius: 12px;
+  background-color: #f4a261;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  display: inline-block;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #e76f51;
+}
+
+.section {
+  padding: 30px;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#nivelSelect, label[for="nivelSelect"] {
+  display: block;
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 0 auto 10px auto;
+}
+
+#nivelSelect {
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.jogo-memoria {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 15px;
+  justify-content: center;
+}
+
+.carta {
+  width: 100px;
+  height: 100px;
+  background-color: #e9c46a;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  background-size: cover;
+  background-position: center;
+  user-select: none;
+}
+
+.carta.revelada {
+  background-color: #f4a261;
+}
+
+#pontos {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 20px 0;
+  color: #264653;
+  user-select: none;
+}
+
+.historia,
+.curiosidades {
+  background-color: #fefae0;
+  border-radius: 10px;
+  padding: 25px 30px;
+  margin: 20px auto;
+  max-width: 600px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  user-select: none;
+}
+
+.historia p,
+.curiosidades ul {
+  margin: 15px 0;
+}
+
+.curiosidades ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+footer {
+  background-color: #264653;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  user-select: none;
+}
+
+/* Modal de vitória */
+#modalVitoria {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#modalVitoria .conteudoModal {
+  background: #fffbe6;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 400px;
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  box-shadow: 0 0 15px #f4a261;
+}
+
+#modalVitoria .conteudoModal h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #2a9d8f;
+}
+
+#modalVitoria .conteudoModal p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#modalVitoria button {
+  background-color: #f4a261;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin: 5px;
+}
+
+#modalVitoria button:hover {
+  background-color: #e76f51;
+}

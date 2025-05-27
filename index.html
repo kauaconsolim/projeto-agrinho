@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brincando com o Campo e a Cidade</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Brincando com o Campo e a Cidade</h1>
+  </header>
+
+  <nav>
+    <a href="#jogo" class="active" id="linkJogo">Jogo da Memória</a>
+    <a href="#historia" id="linkHistoria">História</a>
+    <a href="#curiosidades" id="linkCuriosidades">Curiosidades</a>
+  </nav>
+
+  <section id="jogo" class="section">
+    <h2>Jogo da Memória</h2>
+    <label for="nivelSelect">Escolha o nível:</label>
+    <select id="nivelSelect">
+      <option value="facil">Fácil</option>
+      <option value="medio">Médio</option>
+      <option value="dificil">Difícil</option>
+    </select>
+
+    <div id="pontos">Pontos: 0</div>
+    <div class="jogo-memoria" id="tabuleiro"></div>
+  </section>
+
+  <section id="historia" class="section" style="display:none;">
+    <h2>História: A Amizade de Zeca e Ana</h2>
+    <div class="historia">
+      <p>Zeca mora na fazenda e Ana na cidade grande. Um dia, eles se encontraram numa feira especial que unia os sabores do campo com os sons da cidade. Foi o começo de uma linda amizade!</p>
+      <p>Eles aprenderam a compartilhar suas culturas e entender como a vida no campo e na cidade se completam.</p>
+      <p>Juntos, eles descobriram que amizade e respeito unem todos os lugares.</p>
+    </div>
+  </section>
+
+  <section id="curiosidades" class="section" style="display:none;">
+    <h2>Curiosidades sobre o Campo</h2>
+    <div class="curiosidades">
+      <ul>
+        <li>Você sabia que o milho é uma das plantas mais antigas cultivadas pelas pessoas?</li>
+        <li>Nas fazendas, os galos cantam ao amanhecer para marcar o início do dia!</li>
+        <li>As vacas têm um ótimo senso de direção e conseguem voltar sozinhas para o estábulo.</li>
+        <li>O campo tem muitas plantas e animais que ajudam a natureza a se manter saudável.</li>
+        <li>Algumas fazendas usam tecnologias para ajudar a cuidar do meio ambiente.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>Feito com alegria para crianças curiosas! 🌟</p>
+  </footer>
+
+  <div id="modalVitoria">
+    <div class="conteudoModal">
+      <h2>🎉 Parabéns! 🎉</h2>
+      <p>Uau! Você encontrou todos os pares do jogo da memória!<br>Parabéns, pequeno explorador do campo e da cidade! 🌟🚜🏙️</p>
+      <button id="botaoFecharModal">Jogar Novamente</button>
+      <button id="botaoProximoNivel">Ir para o próximo nível</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
