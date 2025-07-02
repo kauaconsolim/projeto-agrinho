@@ -1,6 +1,3 @@
-Claro! Vou deixar a descrição mais leve, amigável e com um toque mais natural, como se fosse para apresentar seu projeto para alguém com simpatia. Dá uma olhada:
-
----
 
 # 🧠 Brincando com o Campo e a Cidade
 
